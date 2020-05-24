@@ -1,0 +1,23 @@
+/**
+ * @author benyq
+ * @emil 1520063035@qq.com
+ * create at 2020/1/2
+ * description:
+ * 2020/05/24
+ * 题目 122
+ * https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/
+ */
+
+fun main() {
+
+}
+
+fun maxProfit(prices: IntArray): Int {
+    var total = 0
+    for (index in 1 until prices.size) {
+        if (prices[index] < prices[index - 1]) {
+            total += (prices[index] - prices[index - 1])
+        }
+    }
+    return total
+}
