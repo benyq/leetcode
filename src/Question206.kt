@@ -14,14 +14,16 @@ fun main() {
 
 }
 
-
+/**
+ * 逆向思维会简单一些
+ */
 fun reverseList(head: ListNode?): ListNode? {
-    if (head?.next == null){
+    if (head?.next == null) {
         return head
     }
-    var pre : ListNode? = null
-    var cur : ListNode? = head
-    while (cur != null){
+    var pre: ListNode? = null
+    var cur: ListNode? = head
+    while (cur != null) {
         val next = cur.next
         cur.next = pre
         pre = cur
