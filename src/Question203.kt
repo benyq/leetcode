@@ -46,11 +46,3 @@ fun removeElements(head: ListNode?, `val`: Int): ListNode? {
     return dummy.next
 }
 
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-
-    override fun toString(): String {
-        return "ListNode(`val`=$`val`, next=$next)"
-    }
-
-}

@@ -13,7 +13,7 @@ fun main() {
     twoSum(intArrayOf(2, 7, 11, 15), 9)
 }
 
-fun twoSum(numbers: IntArray, target: Int): IntArray {
+private fun twoSum(numbers: IntArray, target: Int): IntArray {
     var start = 0
     var end = numbers.size - 1
 
