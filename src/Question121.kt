@@ -15,6 +15,9 @@ fun main(args: Array<String>) {
 
 //在遍历过程中，缓存最大值；如果小于最小值，则从当前位置重新计算，与缓存的最大值比较，算出最大值
 fun maxProfit(prices: Array<Int>): Int{
+    if (prices.isEmpty()) {
+        return 0
+    }
     var min = prices[0]
     var profit = 0
     for (i in 1 until prices.size) {
